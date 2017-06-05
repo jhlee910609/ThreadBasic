@@ -1,0 +1,7 @@
+#Mon Jun 05 20:27:43 KST 2017
+base.0=/Users/JunHee/AndroidStudioProjects/ThreadBasic/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_858d4f6c4c73c5692c041da75b96c3d97fb2ae73
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/JunHee/AndroidStudioProjects/ThreadBasic/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_11b37933885a115dcbe73b7670cbd1c01ce880a6/classes.dex
+base.1=/Users/JunHee/AndroidStudioProjects/ThreadBasic/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_11b37933885a115dcbe73b7670cbd1c01ce880a6
+file.0=/Users/JunHee/AndroidStudioProjects/ThreadBasic/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_858d4f6c4c73c5692c041da75b96c3d97fb2ae73/classes.dex

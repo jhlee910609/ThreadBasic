@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     Button btnTest, btnBasic, btnRain;
 
@@ -20,30 +20,28 @@ public class MainActivity extends AppCompatActivity {
         btnTest = (Button) findViewById(R.id.btnTest);
         btnRain = (Button) findViewById(R.id.btnRain);
 
-        btnBasic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ThreadBasicActivity.class);
-                startActivity(intent);
-            }
-        });
+        btnBasic.setOnClickListener(this);
+        btnTest.setOnClickListener(this);
+        btnRain.setOnClickListener(this);
+    }
 
-        btnTest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, TestActivity.class);
-                startActivity(intent);
-            }
-        });
+    @Override
+    public void onClick(View v) {
+        Intent intent = null;
+        switch(v.getId()){
+            case R.id.btnBasic:
+                intent = new Intent(this, ThreadBasicActivity.class);
+                break;
 
-        btnRain.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, RainActivity.class);
-                startActivity(intent);
-            }
-        });
+            case R.id.btnTest:
+                intent = new Intent(this, TestActivity.class);
+                break;
 
+            case R.id.btnRain:
+                intent = new Intent(this, RainActivity.class);
+                break;
+        }
+        startActivity(intent);
     }
 }
 
